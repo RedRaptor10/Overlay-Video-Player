@@ -1,0 +1,95 @@
+#video-input-container {
+    display: flex;
+    width: 50%;
+    height: auto;
+    margin: 24px auto 24px auto;
+}
+#video-input {
+    width: 75%;
+    font-family: 'Arial';
+    font-size: 24px;
+}
+#play-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(64, 128, 255);
+    width: 25%;
+    height: 48px;
+    color: rgb(255, 255, 255);
+    font-family: 'Arial';
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+#play-btn:hover { background: rgb(32, 96, 224); }
+
+#parameters {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    font-family: 'Arial';
+    text-align: center;
+}
+#parameters input { margin-left: 24px; }
+#parameters input:hover { cursor: pointer; }
+
+#info {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Arial';
+    text-align: center;
+}
+
+#overlay {
+    position: fixed;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 9999;
+}
+
+#overlay-video-container {
+    position: fixed;
+    background: rgb(16, 16, 16);
+    width: 50%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 9999;
+}
+
+#overlay-iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    z-index: 9999;
+}
+#overlay-iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#overlay-video {
+    width: 100%;
+    height: auto;
+}
+
+/* Mobile */
+@media screen and (max-width: 1000px) {
+    #overlay-video-container {
+        width: 100%;
+    }
+}
