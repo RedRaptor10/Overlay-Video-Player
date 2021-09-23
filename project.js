@@ -54,6 +54,7 @@ function playVideo(url, autoplay, controls, loop, muted, width, height, preload,
         iframeContainer.append(video);
         videoContainer.append(iframeContainer);
     }
+    // Video
     else {
         // Create Video
         const video = document.createElement('video');
