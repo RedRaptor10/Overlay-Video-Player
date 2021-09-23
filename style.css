@@ -70,7 +70,7 @@
 
 #overlay-iframe-container {
     position: relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 56.25%; /* Create 16:9 aspect ratio */
     z-index: 9999;
 }
 #overlay-iframe-container iframe {
